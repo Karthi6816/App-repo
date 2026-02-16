@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6.0.2
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -24,7 +24,7 @@ jobs:
         run: |
           aws s3api create-bucket \
             --bucket primuslearning-github-actions-website \
-            --region us-east-1
+            --region ap-southeast-2
 
           aws s3api put-public-access-block \
             --bucket primuslearning-github-actions-website \
