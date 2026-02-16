@@ -23,7 +23,7 @@ jobs:
       - name: Create S3 Bucket with Website Configuration
         run: |
           aws s3api create-bucket \
-            --bucket primuslearning-github-actions-website \
+            --bucket primlearng-github-actions-website \
             --region ap-southeast-2
 
           aws s3api put-public-access-block \
